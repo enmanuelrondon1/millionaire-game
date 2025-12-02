@@ -1,0 +1,981 @@
+{
+  "questions": [
+    {
+      "question": "¿Cuál es la capital de Francia?",
+      "answers": ["París", "Lyon", "Marsella", "Toulouse"],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿En qué año terminó la Segunda Guerra Mundial?",
+      "answers": ["1944", "1945", "1946", "1943"],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Cuál es el planeta más grande del sistema solar?",
+      "answers": ["Saturno", "Neptuno", "Júpiter", "Tierra"],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Ciencia"
+    },
+    {
+      "question": "¿Cuántos continentes hay?",
+      "answers": ["5", "6", "7", "8"],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿Cuál es el río más largo del mundo?",
+      "answers": ["Amazonas", "Yangtsé", "Nilo", "Misisipi"],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿Quién pintó la Mona Lisa?",
+      "answers": ["Miguel Ángel", "Leonardo da Vinci", "Rafael", "Botticelli"],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Arte"
+    },
+    {
+      "question": "¿Cuál es el elemento químico más abundante en el aire?",
+      "answers": ["Oxígeno", "Argón", "Nitrógeno", "Dióxido de carbono"],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Ciencia"
+    },
+    {
+      "question": "¿Cuántos jugadores hay en un equipo de fútbol en el campo?",
+      "answers": ["10", "12", "11", "9"],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Deportes"
+    },
+    {
+      "question": "¿En qué país se originó el fútbol moderno?",
+      "answers": ["Brasil", "Italia", "Inglaterra", "Alemania"],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Deportes"
+    },
+    {
+      "question": "¿Cuál es la montaña más alta del mundo?",
+      "answers": ["K2", "Kangchenjunga", "Monte Everest", "Lhotse"],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿Cuántas patas tiene una araña?",
+      "answers": ["6", "10", "8", "4"],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Naturaleza"
+    },
+    {
+      "question": "¿Cuál es el idioma más hablado en el mundo?",
+      "answers": ["Español", "Inglés", "Mandarín", "Hindi"],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "General"
+    },
+    {
+      "question": "¿En qué año llegó el hombre a la Luna?",
+      "answers": ["1968", "1970", "1969", "1971"],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Cuál es el animal terrestre más rápido?",
+      "answers": ["Gacela", "Caballo", "Guepardo", "Perro de caza"],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Naturaleza"
+    },
+    {
+      "question": "¿Cuántos lados tiene un hexágono?",
+      "answers": ["5", "7", "6", "8"],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Ciencia"
+    },
+    {
+      "question": "¿Cuál es la capital de España?",
+      "answers": ["Barcelona", "Valencia", "Madrid", "Sevilla"],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿En qué continente está el Sáhara?",
+      "answers": ["Asia", "América", "África", "Oceanía"],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿Cuál es el océano más grande del mundo?",
+      "answers": ["Atlántico", "Índico", "Pacífico", "Ártico"],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿Quién fue el primer presidente de los Estados Unidos?",
+      "answers": [
+        "Thomas Jefferson",
+        "Abraham Lincoln",
+        "George Washington",
+        "Benjamin Franklin"
+      ],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Cuántos huesos tiene el cuerpo humano adulto?",
+      "answers": ["200", "210", "206", "196"],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "Ciencia"
+    },
+    {
+      "question": "¿Cuál es la velocidad de la luz?",
+      "answers": [
+        "150,000 km/s",
+        "300,000 km/s",
+        "500,000 km/s",
+        "100,000 km/s"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Ciencia"
+    },
+    {
+      "question": "¿En qué año cayó el Muro de Berlín?",
+      "answers": ["1988", "1989", "1990", "1991"],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Cuál es el país más poblado del mundo?",
+      "answers": ["China", "India", "Indonesia", "Pakistán"],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿Cuántos países hay en la Unión Europea?",
+      "answers": ["28", "27", "25", "30"],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿Quién escribió 'Don Quijote'?",
+      "answers": [
+        "García Lorca",
+        "Miguel de Cervantes",
+        "Benito Pérez Galdós",
+        "Ramón del Valle-Inclán"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Libros"
+    },
+    {
+      "question": "¿En qué año se inventó el teléfono?",
+      "answers": ["1875", "1876", "1877", "1874"],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Tecnología"
+    },
+    {
+      "question": "¿Cuál es el país más pequeño del mundo?",
+      "answers": ["Mónaco", "Vaticano", "San Marino", "Liechtenstein"],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿Cuántos lados tiene un cubo?",
+      "answers": ["8", "6", "12", "4"],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Ciencia"
+    },
+    {
+      "question": "¿Cuál es la moneda de Japón?",
+      "answers": ["Won", "Yen", "Dólar", "Rupia"],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "General"
+    },
+    {
+      "question": "¿En qué país nació Cristóbal Colón?",
+      "answers": ["España", "Italia", "Portugal", "Grecia"],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Cuál es el gas que respiran las plantas?",
+      "answers": ["Oxígeno", "Dióxido de carbono", "Nitrógeno", "Hidrógeno"],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Ciencia"
+    },
+    {
+      "question": "¿Cuántos años tiene una década?",
+      "answers": ["5", "10", "20", "15"],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "General"
+    },
+    {
+      "question": "¿Cuál es el metal más preciado?",
+      "answers": ["Platino", "Oro", "Plata", "Paladio"],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Ciencia"
+    },
+    {
+      "question": "¿En qué ciudad nació Beethoven?",
+      "answers": ["Viena", "Bonn", "Berlín", "Múnich"],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Cuál es el deporte más popular en Estados Unidos?",
+      "answers": ["Baloncesto", "Fútbol americano", "Béisbol", "Hockey"],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Deportes"
+    },
+    {
+      "question": "¿Cuántas cuerdas tiene una guitarra clásica?",
+      "answers": ["7", "6", "5", "8"],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Música"
+    },
+    {
+      "question": "¿Cuál es el planeta más cercano al Sol?",
+      "answers": ["Venus", "Mercurio", "Tierra", "Marte"],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Ciencia"
+    },
+    {
+      "question": "¿En qué país está el Taj Mahal?",
+      "answers": ["Pakistán", "India", "Bangladesh", "Nepal"],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿Cuál es el animal acuático más grande del mundo?",
+      "answers": ["Tiburón blanco", "Ballena azul", "Calamar gigante", "Orca"],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Naturaleza"
+    },
+    {
+      "question": "¿Cuántos minutos tiene una hora?",
+      "answers": ["50", "60", "70", "55"],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "General"
+    },
+    {
+      "question": "¿Cuál es el desierto más grande del mundo?",
+      "answers": ["Gobi", "Sáhara", "Kalahari", "Atacama"],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿En qué año comenzó la Guerra Civil Española?",
+      "answers": ["1935", "1936", "1937", "1938"],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Cuál es la capital de Italia?",
+      "answers": ["Milán", "Roma", "Venecia", "Florencia"],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿Cuántos libros hay en el Nuevo Testamento?",
+      "answers": ["66", "27", "39", "53"],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "General"
+    },
+    {
+      "question": "¿Quién fue el inventor de la bombilla?",
+      "answers": [
+        "Thomas Edison",
+        "Nikola Tesla",
+        "Alexander Fleming",
+        "Benjamin Franklin"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Tecnología"
+    },
+    {
+      "question": "¿Cuál es la capital de Alemania?",
+      "answers": ["Berlín", "Múnich", "Hamburgo", "Colonia"],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿En qué año se fundó la ONU?",
+      "answers": ["1945", "1944", "1946", "1943"],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Cuál es el rey de la selva?",
+      "answers": ["León", "Tigre", "Elefante", "Gorila"],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "Naturaleza"
+    },
+    {
+      "question": "¿Cuántos dientes tiene un adulto humano?",
+      "answers": ["32", "28", "30", "36"],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "Ciencia"
+    },
+    {
+      "question": "¿Cuál es la capital de Portugal?",
+      "answers": ["Lisboa", "Oporto", "Covilhã", "Setúbal"],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿En qué país se celebra el Carnaval más famoso?",
+      "answers": ["Brasil", "Italia", "España", "Francia"],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "General"
+    },
+    {
+      "question": "¿Cuál es la velocidad del sonido?",
+      "answers": ["343 m/s", "300 m/s", "400 m/s", "250 m/s"],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Ciencia"
+    },
+    {
+      "question": "¿Cuántos estados tiene Estados Unidos?",
+      "answers": ["50", "48", "52", "49"],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿Quién escribió 'Romeo y Julieta'?",
+      "answers": [
+        "William Shakespeare",
+        "Christopher Marlowe",
+        "Ben Jonson",
+        "Thomas Kyd"
+      ],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "Libros"
+    },
+    {
+      "question": "¿En qué año nació Albert Einstein?",
+      "answers": ["1879", "1878", "1880", "1881"],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Ciencia"
+    },
+    {
+      "question": "¿Cuál es la capital de Grecia?",
+      "answers": ["Atenas", "Tesalónica", "Patras", "Heraclión"],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿Cuántas provincias tiene España?",
+      "answers": ["52", "50", "51", "53"],
+      "correct": 0,
+      "difficulty": "hard",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿En qué año murió Cleopatra?",
+      "answers": ["30 a.C.", "31 a.C.", "29 a.C.", "32 a.C."],
+      "correct": 0,
+      "difficulty": "hard",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Cuál es la estructura más antigua del mundo que aún sigue en pie?",
+      "answers": ["Pirámide de Giza", "Coliseo", "Partenón", "Esfinge"],
+      "correct": 0,
+      "difficulty": "hard",
+      "category": "Historia"
+    },
+    {
+      "question": "¿En qué año se escribió 'La Revolución Francesa' de Carlyle?",
+      "answers": ["1837", "1840", "1835", "1839"],
+      "correct": 0,
+      "difficulty": "hard",
+      "category": "Libros"
+    },
+    {
+      "question": "¿Cuál es el compositor más prolífico de todos los tiempos?",
+      "answers": [
+        "Georg Friedrich Händel",
+        "Wolfgang Amadeus Mozart",
+        "Johann Sebastian Bach",
+        "Pyotr Ilyich Tchaikovsky"
+      ],
+      "correct": 0,
+      "difficulty": "hard",
+      "category": "Música"
+    },
+    {
+      "question": "¿En qué año se descubrió la penicilina?",
+      "answers": ["1928", "1930", "1925", "1932"],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Ciencia"
+    },
+    {
+      "question": "¿Cuál es el número atómico del oxígeno?",
+      "answers": ["8", "6", "7", "9"],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Ciencia"
+    },
+    {
+      "question": "¿En qué país se encuentra el Monte Kilimanjaro?",
+      "answers": ["Tanzania", "Kenia", "Uganda", "Ruanda"],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿Cuál es el río más corto del mundo?",
+      "answers": ["Roe", "Támesis", "Sena", "Tiber"],
+      "correct": 0,
+      "difficulty": "hard",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿Cuántos títulos de Grand Slam ganó Rafael Nadal hasta 2024?",
+      "answers": ["22", "20", "21", "23"],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Deportes"
+    },
+    {
+      "question": "¿En qué país se juega el críquet de forma más popular?",
+      "answers": ["India", "Australia", "Pakistán", "Sri Lanka"],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Deportes"
+    },
+    {
+      "question": "¿Cuál es la banda sonora más vendida de todos los tiempos?",
+      "answers": [
+        "Titanic",
+        "El Fantasma de la Ópera",
+        "Star Wars",
+        "Juego de Tronos"
+      ],
+      "correct": 0,
+      "difficulty": "hard",
+      "category": "Música"
+    },
+    {
+      "question": "¿Cuántos satélites tiene Marte?",
+      "answers": ["2", "1", "3", "4"],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Ciencia"
+    },
+    {
+      "question": "¿En qué país se encuentra la Estatua de la Libertad?",
+      "answers": ["Estados Unidos", "Francia", "Canadá", "México"],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿Cuál fue el imperio más grande del mundo?",
+      "answers": [
+        "Imperio Británico",
+        "Imperio Romano",
+        "Imperio Mongol",
+        "Imperio Otomano"
+      ],
+      "correct": 0,
+      "difficulty": "hard",
+      "category": "Historia"
+    },
+    {
+      "question": "¿En qué año se realizó el primer viaje de Cristóbal Colón?",
+      "answers": ["1492", "1493", "1491", "1494"],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Cuál es la novela más vendida de todos los tiempos?",
+      "answers": [
+        "La Biblia",
+        "Don Quijote",
+        "Harry Potter",
+        "El Señor de los Anillos"
+      ],
+      "correct": 0,
+      "difficulty": "hard",
+      "category": "Libros"
+    },
+    {
+      "question": "¿En qué año se inventó la televisión?",
+      "answers": ["1927", "1925", "1930", "1932"],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Tecnología"
+    },
+    {
+      "question": "¿Cuál es la película más taquillera de todos los tiempos?",
+      "answers": [
+        "Avatar",
+        "Titanic",
+        "Avengers: Endgame",
+        "Avatar: El Camino del Agua"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Películas"
+    },
+    {
+      "question": "¿Cuántos años duró la Guerra de los Cien Años?",
+      "answers": ["116", "100", "115", "120"],
+      "correct": 0,
+      "difficulty": "hard",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Quién ganó el Premio Nobel de Física en 1921?",
+      "answers": [
+        "Albert Einstein",
+        "Niels Bohr",
+        "Max Planck",
+        "Erwin Schrödinger"
+      ],
+      "correct": 0,
+      "difficulty": "hard",
+      "category": "Ciencia"
+    },
+    {
+      "question": "¿En qué año cayó el Imperio Romano?",
+      "answers": ["476 d.C.", "400 d.C.", "500 d.C.", "450 d.C."],
+      "correct": 0,
+      "difficulty": "hard",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Cuál es el elemento químico con símbolo Au?",
+      "answers": ["Oro", "Plata", "Cobre", "Platino"],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Ciencia"
+    },
+    {
+      "question": "¿Cuántos lados tiene un pentágono?",
+      "answers": ["5", "6", "4", "7"],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "Ciencia"
+    },
+    {
+      "question": "¿En qué país nació Pablo Picasso?",
+      "answers": ["España", "Francia", "Italia", "Portugal"],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Arte"
+    },
+    {
+      "question": "¿Cuál es el libro más antiguo del mundo?",
+      "answers": [
+        "La Biblia",
+        "El Corán",
+        "Los Vedas",
+        "La Épica de Gilgamesh"
+      ],
+      "correct": 3,
+      "difficulty": "hard",
+      "category": "Libros"
+    },
+    {
+      "question": "¿Cuántos músculos tiene el cuerpo humano?",
+      "answers": ["206", "300", "400", "639"],
+      "correct": 3,
+      "difficulty": "hard",
+      "category": "Ciencia"
+    },
+    {
+      "question": "¿En qué año se legalizó el matrimonio homosexual en España?",
+      "answers": ["2003", "2004", "2005", "2006"],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Cuál es el país con más población de habla hispana?",
+      "answers": ["Argentina", "Colombia", "España", "México"],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿En qué país está la Universidad más antigua de América?",
+      "answers": ["Perú", "Colombia", "República Dominicana", "México"],
+      "correct": 2,
+      "difficulty": "hard",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Cuál es el pez más rápido del mundo?",
+      "answers": ["Tiburón blanco", "Pez vela", "Atún rojo", "Delfín"],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Naturaleza"
+    },
+    {
+      "question": "¿Cuántas veces late el corazón por minuto en promedio?",
+      "answers": ["50 a 60", "60 a 80", "80 a 100", "100 a 120"],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Ciencia"
+    },
+    {
+      "question": "¿En qué año se fundó Microsoft?",
+      "answers": ["1973", "1975", "1977", "1979"],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Tecnología"
+    },
+    {
+      "question": "¿Cuál es el volcán más alto del mundo?",
+      "answers": ["Kilimanjaro", "Ojos del Salado", "Cotopaxi", "Tenerife"],
+      "correct": 1,
+      "difficulty": "hard",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿Quién fue el primer hombre en pisar la Luna?",
+      "answers": [
+        "Buzz Aldrin",
+        "Neil Armstrong",
+        "Michael Collins",
+        "John Glenn"
+      ],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Historia"
+    },
+    {
+      "question": "¿En qué país está ubicado Machu Picchu?",
+      "answers": ["Ecuador", "Perú", "Bolivia", "Colombia"],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿Cuál es el metal con mayor densidad?",
+      "answers": ["Platino", "Osmio", "Iridio", "Oro"],
+      "correct": 1,
+      "difficulty": "hard",
+      "category": "Ciencia"
+    },
+
+    {
+      "question": "¿Cuál es la capital de Venezuela?",
+      "answers": ["Maracaibo", "Caracas", "Valencia", "Barquisimeto"],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿Quién es considerado el libertador de Venezuela?",
+      "answers": [
+        "Francisco de Miranda",
+        "Simón Bolívar",
+        "Antonio José de Sucre",
+        "José Antonio Páez"
+      ],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Cuál es el salto de agua más alto del mundo?",
+      "answers": ["Niagara", "Victoria", "Salto Ángel", "Iguazú"],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿En qué año se independizó Venezuela de España?",
+      "answers": ["1810", "1811", "1821", "1830"],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Cuál es la moneda oficial de Venezuela?",
+      "answers": ["Dólar", "Bolívar", "Euro", "Peso"],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "General"
+    },
+    {
+      "question": "¿Qué lago es el principal cuerpo de agua en Venezuela?",
+      "answers": [
+        "Lago de Valencia",
+        "Lago Maracaibo",
+        "Lago de Mucubají",
+        "Lago de Guri"
+      ],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿Cuál es el deporte más popular en Venezuela?",
+      "answers": ["Fútbol", "Béisbol", "Baloncesto", "Tenis"],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Deportes"
+    },
+    {
+      "question": "¿En qué estado se encuentra el Salto Ángel?",
+      "answers": ["Zulia", "Bolívar", "Táchira", "Anzoátegui"],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿Quién fue el primer presidente de Venezuela?",
+      "answers": [
+        "Simón Bolívar",
+        "Cristóbal Mendoza",
+        "José Antonio Páez",
+        "Antonio Guzmán Blanco"
+      ],
+      "correct": 1,
+      "difficulty": "hard",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Cuál es el plato típico venezolano hecho con maíz?",
+      "answers": ["Arepa", "Taco", "Empanada", "Tamal"],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "Cultura"
+    },
+    {
+      "question": "¿Qué montaña es la más alta de Venezuela?",
+      "answers": ["Pico Bolívar", "Pico Espejo", "Naiguatá", "Pico del Águila"],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿En qué año se creó la Gran Colombia?",
+      "answers": ["1819", "1821", "1817", "1824"],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Cuál es el animal nacional de Venezuela?",
+      "answers": ["Cóndor", "Turpial", "Jaguar", "Anaconda"],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Naturaleza"
+    },
+    {
+      "question": "¿Qué ciudad venezolana es conocida como la capital petrolera?",
+      "answers": ["Caracas", "Maracaibo", "Puerto La Cruz", "Punto Fijo"],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿Quién es el compositor venezolano más famoso del siglo XX?",
+      "answers": [
+        "Teresa Carreño",
+        "Antonio Estévez",
+        "José Ángel Lamas",
+        "Juan Vicente Torrealba"
+      ],
+      "correct": 1,
+      "difficulty": "hard",
+      "category": "Música"
+    },
+    {
+      "question": "¿Cuál es la isla más grande de Venezuela?",
+      "answers": ["Margarita", "La Tortuga", "La Blanquilla", "Los Roques"],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿En qué batalla se consolidó la independencia de Venezuela en 1821?",
+      "answers": [
+        "Batalla de Ayacucho",
+        "Batalla de Carabobo",
+        "Batalla de Bárbula",
+        "Batalla de San Félix"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Qué danza tradicional es típica de los llanos venezolanos?",
+      "answers": ["Joropo", "Salsa", "Merengue", "Cumbia"],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "Cultura"
+    },
+    {
+      "question": "¿Cuál es el principal producto de exportación de Venezuela?",
+      "answers": ["Café", "Petróleo", "Cacao", "Algodón"],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Economía"
+    },
+    {
+      "question": "¿En qué año Hugo Chávez asumió la presidencia de Venezuela?",
+      "answers": ["1998", "1999", "2000", "1997"],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Cuál es considerada la capital cultural de Venezuela?",
+      "answers": ["Mérida", "Caracas", "Ciudad Bolívar", "Valencia"],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Cultura"
+    },
+    {
+      "question": "¿Cuál es la altura máxima del teleférico de Mérida?",
+      "answers": ["3.980 m", "4.765 m", "5.045 m", "4.200 m"],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿Qué presidente venezolano decretó el sufragio femenino?",
+      "answers": [
+        "Isaías Medina Angarita",
+        "Rómulo Betancourt",
+        "Marcos Pérez Jiménez",
+        "Carlos Andrés Pérez"
+      ],
+      "correct": 1,
+      "difficulty": "hard",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Cuál fue la primera ciudad de América continental fundada por los españoles?",
+      "answers": ["Caracas", "Cumaná", "Santo Domingo", "Corrientes"],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Cuál de estos productos tiene su origen en Venezuela?",
+      "answers": [
+        "Harina de plátano",
+        "Frescolita",
+        "Fanta Naranja",
+        "Coca-Cola"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "General"
+    },
+    {
+      "question": "¿En qué año se descubrió el petróleo en Venezuela?",
+      "answers": ["1918", "1917", "1927", "1905"],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Cuál de estos personajes participó en la Revolución Francesa, la Independencia Estadounidense y la Independencia Venezolana?",
+      "answers": [
+        "Juan Pablo Duarte",
+        "Simón Bolívar",
+        "Francisco de Miranda",
+        "José de San Martín"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Qué presidente venezolano sobrevivió a un atentado ordenado por Rafael Leónidas Trujillo?",
+      "answers": [
+        "Rómulo Betancourt",
+        "Hugo Chávez",
+        "Marcos Pérez Jiménez",
+        "Luis Herrera Campins"
+      ],
+      "correct": 0,
+      "difficulty": "hard",
+      "category": "Historia"
+    },
+    {
+      "question": "¿Cuántos aeropuertos internacionales tiene Venezuela?",
+      "answers": ["12", "11", "9", "10"],
+      "correct": 2,
+      "difficulty": "hard",
+      "category": "Geografía"
+    },
+    {
+      "question": "¿Quién fue Rómulo Gallegos?",
+      "answers": [
+        "Escritor y presidente de Venezuela",
+        "Pintor impresionista",
+        "Compositor de joropo",
+        "Deportista de béisbol"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Literatura"
+    }
+  ]
+}

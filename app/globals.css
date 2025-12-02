@@ -1,8 +1,51 @@
+/* app/globals.css */
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Colores Primarios */
+  --color-primary: #6D28D9;
+  --color-primary-light: #A78BFA;
+  --color-primary-dark: #4C1D95;
+  
+  /* Colores Secundarios */
+  --color-secondary: #06B6D4;
+  --color-secondary-light: #22D3EE;
+  --color-secondary-dark: #0891B2;
+  
+  /* Colores de Acento */
+  --color-accent: #FBBF24;
+  --color-accent-light: #FCD34D;
+  --color-accent-dark: #D97706;
+  
+  /* Estados */
+  --color-success: #10B981;
+  --color-error: #EF4444;
+  --color-warning: #F97316;
+  --color-info: #3B82F6;
+  
+  /* Neutros */
+  --color-dark-bg: #0F172A;
+  --color-light-bg: #F8FAFC;
+  --color-border: #E2E8F0;
+  --color-text-dark: #0F172A;
+  --color-text-light: #F1F5F9;
+  
+  /* Gradientes */
+  --gradient-epic: linear-gradient(135deg, #6D28D9 0%, #06B6D4 50%, #FBBF24 100%);
+  --gradient-subtle: linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%);
+  --gradient-success: linear-gradient(135deg, #10B981 0%, #06B6D4 100%);
+  --gradient-error: linear-gradient(135deg, #F97316 0%, #EF4444 100%);
+  
+  /* Legacy (compatibilidad) */
+  --background: #0F172A;
+  --foreground: #F1F5F9;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #F8FAFC;
+    --foreground: #0F172A;
+  }
 }
 
 @theme inline {
@@ -12,15 +55,72 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+/* Clases de utilidad para botones */
+.btn-primary {
+  background: var(--gradient-epic);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(109, 40, 217, 0.3);
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(109, 40, 217, 0.5);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-secondary);
+  border: 2px solid var(--color-secondary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(6, 182, 212, 0.1);
+  transform: scale(1.05);
+}
+
+.btn-success {
+  background: var(--gradient-success);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  transform: scale(1.05);
+}
+
+.btn-error {
+  background: var(--gradient-error);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-error:hover {
+  transform: scale(1.05);
 }
