@@ -3,6 +3,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import Logo from "./components/Logo";
 
 export default function HomePage() {
   const [hoveredGame, setHoveredGame] = useState(null);
@@ -63,6 +64,15 @@ export default function HomePage() {
       href: "/games/flags",
       isNew: true,
     },
+    {
+      id: "math",
+      name: "Desafío Matemático",
+      icon: "🧮",
+      description:
+        "Resuelve operaciones matemáticas contra el reloj. ¡Agiliza tu mente!",
+      href: "/games/math",
+      isNew: true,
+    },
   ];
 
   const stats = [
@@ -75,10 +85,13 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-[var(--color-dark-bg)] text-[var(--color-text-light)] overflow-x-hidden">
       {/* NAVBAR */}
-      <nav className="fixed top-0 w-full px-8 py-6 bg-[rgba(15,23,42,0.95)] backdrop-blur-md z-50 border-b border-[rgba(6,182,212,0.2)]">
+      <nav className="fixed top-0 w-full px-8 py-6 bg-[rgba(15,23,42,0.95)] backdrop-blur-md z-40 border-b border-[rgba(6,182,212,0.2)]">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
-          <div className="text-2xl font-bold bg-gradient-to-r from-[var(--color-primary)] via-[var(--color-secondary)] to-[var(--color-accent)] bg-clip-text text-transparent flex items-center gap-2">
-            🎮 Millionaire
+          <div className="flex items-center gap-3">
+            <Logo />
+            <div className="text-2xl font-bold bg-gradient-to-r from-[var(--color-primary)] via-[var(--color-secondary)] to-[var(--color-accent)] bg-clip-text text-transparent">
+              Millionaire
+            </div>
           </div>
           <ul className="hidden md:flex gap-8 list-none">
             <li>

@@ -1,3 +1,4 @@
+//app/components/InstallPWA.js
 'use client';
 
 import { useState, useEffect } from 'react';
