@@ -8,9 +8,18 @@ const MAX_WRONG_GUESSES = 6;
 export const useHangman = () => {
   const [question, setQuestion] = useState({ question: '', answer: '' });
   const [guessedLetters, setGuessedLetters] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  const fetchQuestion = async () => {
+    setIsLoading(true);
+    const newQuestion = await getRandomQuestion();
+    setQuestion(newQuestion);
+    setGuessedLetters([]);
+    setIsLoading(false);
+  };
 
   useEffect(() => {
-    setQuestion(getRandomQuestion());
+    fetchQuestion();
   }, []);
 
   const wordToGuess = question.answer;
@@ -34,8 +43,7 @@ export const useHangman = () => {
   );
 
   const restartGame = () => {
-    setQuestion(getRandomQuestion());
-    setGuessedLetters([]);
+    fetchQuestion();
   };
 
   return {
@@ -45,6 +53,7 @@ export const useHangman = () => {
     wrongGuesses,
     isWinner,
     isLoser,
+    isLoading,
     guessLetter,
     restartGame,
   };
