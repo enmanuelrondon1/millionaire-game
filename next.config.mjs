@@ -2,14 +2,15 @@
 import withPWA from 'next-pwa';
 
 const nextConfig = {
-  /* config options here */
+  reactStrictMode: true,
+  compress: true,
 };
 
 const pwaConfig = {
   dest: 'public',
-  register: true,
-  skipWaiting: true,
   disable: process.env.NODE_ENV === 'development',
+  register: false, // Nosotros registramos el SW manualmente
+  skipWaiting: true,
 };
 
 export default withPWA(pwaConfig)(nextConfig);
