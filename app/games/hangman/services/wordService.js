@@ -26,9 +26,18 @@ export const getRandomWord = () => {
   return words[Math.floor(Math.random() * words.length)];
 };
 
-import questions from './questions.json';
-
-export const getRandomQuestion = () => {
-  const randomIndex = Math.floor(Math.random() * questions.length);
-  return questions[randomIndex];
+export const getRandomQuestion = async () => {
+  try {
+    const response = await fetch('/hangman-questions.json');
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    const questions = await response.json();
+    const randomIndex = Math.floor(Math.random() * questions.length);
+    return questions[randomIndex];
+  } catch (error) {
+    console.error('Failed to fetch hangman questions:', error);
+    // Return a default question in case of error
+    return { question: 'Error al cargar', answer: 'error' };
+  }
 };
