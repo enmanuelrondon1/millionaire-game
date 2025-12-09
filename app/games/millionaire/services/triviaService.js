@@ -1,4 +1,4 @@
-// app/services/triviaService.js
+// app/games/millionaire/services/triviaService.js
 
 /**
  * Obtiene preguntas de trivia en español desde archivo JSON local

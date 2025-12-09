@@ -1,17 +1,7 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
+import './globals.css';
 import InstallPWA from "./components/InstallPWA";
-import ServiceWorkerRegister from "./components/ServiceWorkerRegister";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Juegos de Concurso",
@@ -21,6 +11,11 @@ export const metadata = {
     icon: "/favicon.ico",
     apple: "/icons/icon-192x192.png",
   },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "Juegos",
+  },
 };
 
 export const viewport = {
@@ -29,21 +24,31 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es">
+    <html lang="es" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <head>
         <link rel="manifest" href="/manifest.json" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="theme-color" content="#7c3aed" />
+        <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <ServiceWorkerRegister />
-        <main>{children}</main>
+      <body className="antialiased">
+        {children}
         <InstallPWA />
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            if ('serviceWorker' in navigator) {
+              window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                  .then((registration) => {
+                    console.log('✅ Service Worker registrado:', registration.scope);
+                  })
+                  .catch((error) => {
+                    console.error('❌ Error al registrar Service Worker:', error);
+                  });
+              });
+            }
+          `
+        }} />
       </body>
     </html>
   );

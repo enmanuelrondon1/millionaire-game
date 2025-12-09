@@ -4,24 +4,51 @@
   { "question": "Planeta más grande del sistema solar", "answer": "jupiter" },
   { "question": "¿Cuál es el río más largo del mundo?", "answer": "amazonas" },
   { "question": "Símbolo químico del oro", "answer": "au" },
-  { "question": "¿Qué animal es conocido como el 'rey de la selva'?", "answer": "leon" },
+  {
+    "question": "¿Qué animal es conocido como el 'rey de la selva'?",
+    "answer": "leon"
+  },
   { "question": "Lenguaje de programación creado por Google", "answer": "go" },
   { "question": "Océano más grande de la Tierra", "answer": "pacifico" },
   { "question": "¿Cuántos lados tiene un hexágono?", "answer": "seis" },
   { "question": "Autor de 'Cien años de soledad'", "answer": "garciamarquez" },
-  { "question": "Componente principal del aire que respiramos", "answer": "nitrogeno" },
+  {
+    "question": "Componente principal del aire que respiramos",
+    "answer": "nitrogeno"
+  },
   { "question": "País famoso por sus canguros", "answer": "australia" },
-  { "question": "Herramienta para medir la temperatura", "answer": "termometro" },
+  {
+    "question": "Herramienta para medir la temperatura",
+    "answer": "termometro"
+  },
   { "question": "Moneda oficial de Japón", "answer": "yen" },
-  { "question": "¿En qué país se encuentra la Torre de Pisa?", "answer": "italia" },
+  {
+    "question": "¿En qué país se encuentra la Torre de Pisa?",
+    "answer": "italia"
+  },
   { "question": "Capital de Venezuela", "answer": "caracas" },
-  { "question": "Salto de agua más alto del mundo, ubicado en Venezuela", "answer": "saltoangel" },
-  { "question": "Comida típica venezolana a base de masa de maíz", "answer": "arepa" },
+  {
+    "question": "Salto de agua más alto del mundo, ubicado en Venezuela",
+    "answer": "saltoangel"
+  },
+  {
+    "question": "Comida típica venezolana a base de masa de maíz",
+    "answer": "arepa"
+  },
   { "question": "Árbol nacional de Venezuela", "answer": "araguaney" },
-  { "question": "Archipiélago venezolano famoso por sus playas cristalinas", "answer": "losroques" },
-  { "question": "¿Quién escribió 'Don Quijote de la Mancha'?", "answer": "cervantes" },
+  {
+    "question": "Archipiélago venezolano famoso por sus playas cristalinas",
+    "answer": "losroques"
+  },
+  {
+    "question": "¿Quién escribió 'Don Quijote de la Mancha'?",
+    "answer": "cervantes"
+  },
   { "question": "Fórmula química del agua", "answer": "h2o" },
-  { "question": "Sustancia natural más dura de la Tierra", "answer": "diamante" },
+  {
+    "question": "Sustancia natural más dura de la Tierra",
+    "answer": "diamante"
+  },
   { "question": "Pintor de la 'Mona Lisa'", "answer": "leonardodavinci" },
   { "question": "Continente más frío de la Tierra", "answer": "antartida" }
 ]
