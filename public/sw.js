@@ -1,6 +1,8 @@
-const CACHE_NAME = 'millionaire-game-v1';
-const STATIC_CACHE = 'static-v1';
-const DYNAMIC_CACHE = 'dynamic-v1';
+const CACHE_VERSION = 'v3';
+const STATIC_CACHE = `static-${CACHE_VERSION}`;
+const DYNAMIC_CACHE = `dynamic-${CACHE_VERSION}`;
+const IMAGE_CACHE = `images-${CACHE_VERSION}`;
+const FLAGS_CACHE = `flags-${CACHE_VERSION}`;
 
 // Archivos esenciales para cachear durante la instalación
 const STATIC_ASSETS = [
@@ -8,89 +10,173 @@ const STATIC_ASSETS = [
   '/manifest.json',
   '/favicon.ico',
   '/icons/icon-192x192.png',
+  '/icons/icon-256x256.png',
+  '/icons/icon-384x384.png',
   '/icons/icon-512x512.png',
-  '/games/millionaire',
-  '/games/hangman',
-  '/games/wordle',
-  '/games/simon',
-  '/games/memory',
-  '/games/flags',
-  '/games/math',
-  '/games/trivia-quick',
   '/trivia-questions-es.json',
   '/hangman-questions.json'
 ];
 
 // Instalar Service Worker y cachear assets estáticos
 self.addEventListener('install', (event) => {
-  console.log('Service Worker: Installing...');
+  console.log('[SW] Installing Service Worker...');
   event.waitUntil(
     caches.open(STATIC_CACHE)
       .then((cache) => {
-        console.log('Service Worker: Caching static assets');
-        return cache.addAll(STATIC_ASSETS);
+        console.log('[SW] Precaching static assets');
+        // Cachear archivos uno por uno para evitar fallos
+        return Promise.all(
+          STATIC_ASSETS.map(url => {
+            return cache.add(url).catch(err => {
+              console.warn(`[SW] Failed to cache ${url}:`, err);
+            });
+          })
+        );
       })
-      .then(() => self.skipWaiting())
-      .catch((err) => console.log('Service Worker: Cache failed', err))
+      .then(() => {
+        console.log('[SW] Skip waiting');
+        return self.skipWaiting();
+      })
+      .catch((err) => console.error('[SW] Installation failed:', err))
   );
 });
 
 // Activar Service Worker y limpiar caches antiguas
 self.addEventListener('activate', (event) => {
-  console.log('Service Worker: Activating...');
+  console.log('[SW] Activating Service Worker...');
   event.waitUntil(
     caches.keys().then((cacheNames) => {
       return Promise.all(
         cacheNames.map((cache) => {
-          if (cache !== STATIC_CACHE && cache !== DYNAMIC_CACHE) {
-            console.log('Service Worker: Clearing old cache', cache);
+          if (cache !== STATIC_CACHE && cache !== DYNAMIC_CACHE && cache !== IMAGE_CACHE && cache !== FLAGS_CACHE) {
+            console.log('[SW] Deleting old cache:', cache);
             return caches.delete(cache);
           }
         })
       );
+    }).then(() => {
+      console.log('[SW] Service Worker activated');
+      return self.clients.claim();
     })
   );
-  return self.clients.claim();
 });
 
-// Estrategia: Cache First, falling back to Network
+// Estrategia: Network First con fallback a Cache
 self.addEventListener('fetch', (event) => {
+  const { request } = event;
+  const url = new URL(request.url);
+
   // Ignorar requests que no sean GET
-  if (event.request.method !== 'GET') return;
+  if (request.method !== 'GET') return;
   
-  // Ignorar requests a APIs externas
-  if (!event.request.url.startsWith(self.location.origin)) return;
+  // Ignorar Chrome extensions y devtools
+  if (url.protocol === 'chrome-extension:' || url.protocol === 'devtools:') return;
 
-  event.respondWith(
-    caches.match(event.request)
-      .then((cachedResponse) => {
-        // Si está en cache, devolverlo
-        if (cachedResponse) {
-          return cachedResponse;
+  // Estrategia ESPECIAL para banderas de flagcdn.com: Cache First
+  if (url.hostname === 'flagcdn.com') {
+    event.respondWith(
+      caches.match(request).then(cached => {
+        if (cached) {
+          console.log('[SW] Flag from cache:', url.pathname);
+          return cached;
         }
-
-        // Si no está en cache, hacer fetch y cachear la respuesta
-        return fetch(event.request)
-          .then((response) => {
-            // Solo cachear respuestas válidas
-            if (!response || response.status !== 200 || response.type === 'error') {
+        
+        console.log('[SW] Fetching flag:', url.pathname);
+        return fetch(request).then(response => {
+          if (response && response.status === 200) {
+            return caches.open(FLAGS_CACHE).then(cache => {
+              cache.put(request, response.clone());
               return response;
-            }
-
-            // Clonar la respuesta
-            const responseToCache = response.clone();
-
-            caches.open(DYNAMIC_CACHE)
-              .then((cache) => {
-                cache.put(event.request, responseToCache);
-              });
-
-            return response;
-          })
-          .catch(() => {
-            // Si falla el fetch y no está en cache, mostrar página offline
-            return caches.match('/');
-          });
+            });
+          }
+          return response;
+        }).catch(err => {
+          console.log('[SW] Flag fetch failed:', err);
+          return cached;
+        });
       })
+    );
+    return;
+  }
+
+  // Ignorar requests a APIs externas (excepto flagcdn que ya manejamos)
+  if (url.origin !== self.location.origin) return;
+
+  // Estrategia para imágenes locales: Cache First
+  if (request.destination === 'image') {
+    event.respondWith(
+      caches.match(request).then(cached => {
+        if (cached) return cached;
+        
+        return fetch(request).then(response => {
+          return caches.open(IMAGE_CACHE).then(cache => {
+            cache.put(request, response.clone());
+            return response;
+          });
+        }).catch(() => cached);
+      })
+    );
+    return;
+  }
+
+  // Estrategia para assets estáticos (CSS, JS, JSON): Cache First
+  if (
+    url.pathname.endsWith('.css') || 
+    url.pathname.endsWith('.js') || 
+    url.pathname.endsWith('.json') ||
+    url.pathname.includes('/_next/static/')
+  ) {
+    event.respondWith(
+      caches.match(request).then(cached => {
+        return cached || fetch(request).then(response => {
+          return caches.open(STATIC_CACHE).then(cache => {
+            cache.put(request, response.clone());
+            return response;
+          });
+        });
+      })
+    );
+    return;
+  }
+
+  // Estrategia para navegación: Network First con fallback a Cache
+  if (request.mode === 'navigate' || url.pathname.startsWith('/games/')) {
+    event.respondWith(
+      fetch(request)
+        .then(response => {
+          // Solo cachear respuestas exitosas
+          if (response && response.status === 200) {
+            const responseClone = response.clone();
+            caches.open(DYNAMIC_CACHE).then(cache => {
+              cache.put(request, responseClone);
+            });
+          }
+          return response;
+        })
+        .catch(() => {
+          // Si falla, buscar en cache
+          return caches.match(request).then(cached => {
+            return cached || caches.match('/');
+          });
+        })
+    );
+    return;
+  }
+
+  // Estrategia por defecto: Cache First con actualización en background
+  event.respondWith(
+    caches.match(request).then(cached => {
+      const fetchPromise = fetch(request).then(response => {
+        if (response && response.status === 200) {
+          const responseClone = response.clone();
+          caches.open(DYNAMIC_CACHE).then(cache => {
+            cache.put(request, responseClone);
+          });
+        }
+        return response;
+      });
+
+      return cached || fetchPromise;
+    })
   );
 });

@@ -1,0 +1,474 @@
+[
+  {
+    "question": "¿Cuál es la capital de España?",
+    "answers": ["Barcelona", "Madrid", "Valencia", "Sevilla"],
+    "correct": 1
+  },
+  {
+    "question": "¿En qué año cayó el Muro de Berlín?",
+    "answers": ["1987", "1989", "1991", "1993"],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es el planeta más grande del sistema solar?",
+    "answers": ["Saturno", "Neptuno", "Júpiter", "Tierra"],
+    "correct": 2
+  },
+  {
+    "question": "¿Quién escribió 'Don Quijote'?",
+    "answers": ["García Márquez", "Cervantes", "Lorca", "Cortázar"],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es el río más largo del mundo?",
+    "answers": ["Amazonas", "Nilo", "Yangtsé", "Misisipi"],
+    "correct": 1
+  },
+  {
+    "question": "Capital de Venezuela",
+    "answers": ["Maracaibo", "Valencia", "Barquisimeto", "Caracas"],
+    "correct": 3
+  },
+  {
+    "question": "Salto de agua más alto del mundo, ubicado en Venezuela",
+    "answers": [
+      "Cataratas del Niágara",
+      "Salto Ángel",
+      "Cataratas Victoria",
+      "Cataratas del Iguazú"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Comida típica venezolana a base de masa de maíz",
+    "answers": ["Taco", "Empanada", "Arepa", "Pupusa"],
+    "correct": 2
+  },
+  {
+    "question": "Pico más alto de Venezuela",
+    "answers": [
+      "Pico Bolívar",
+      "Pico Humboldt",
+      "Pico Espejo",
+      "Pico La Concha"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Instrumento musical nacional de Venezuela",
+    "answers": ["Guitarra", "Maracas", "Arpa", "Cuatro"],
+    "correct": 3
+  },
+  {
+    "question": "¿Quién pintó la 'Mona Lisa'?",
+    "answers": ["Van Gogh", "Picasso", "Da Vinci", "Rembrandt"],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuál es el océano más grande?",
+    "answers": ["Atlántico", "Índico", "Ártico", "Pacífico"],
+    "correct": 3
+  },
+  {
+    "question": "¿En qué país se encuentra la Gran Muralla?",
+    "answers": ["Japón", "India", "China", "Corea del Sur"],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuál es el metal más ligero?",
+    "answers": ["Aluminio", "Litio", "Titanio", "Magnesio"],
+    "correct": 1
+  },
+  {
+    "question": "Protagonista de la saga de películas 'Indiana Jones'",
+    "answers": ["Harrison Ford", "Tom Cruise", "Brad Pitt", "Johnny Depp"],
+    "correct": 0
+  },
+  {
+    "question": "¿Qué gas es esencial para la respiración?",
+    "answers": ["Nitrógeno", "Dióxido de carbono", "Oxígeno", "Hidrógeno"],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuál es el libro más vendido de la historia?",
+    "answers": [
+      "Don Quijote",
+      "La Biblia",
+      "El Señor de los Anillos",
+      "Harry Potter"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Director de la película 'Pulp Fiction'",
+    "answers": [
+      "Martin Scorsese",
+      "Steven Spielberg",
+      "Quentin Tarantino",
+      "Christopher Nolan"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿En qué ciudad se encuentran las ruinas de Machu Picchu?",
+    "answers": ["Lima", "Cusco", "Arequipa", "La Paz"],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es el animal terrestre más grande?",
+    "answers": [
+      "Elefante africano",
+      "Rinoceronte blanco",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "¿Cuántos huesos tiene el cuerpo humano adulto?",
+    "answers": ["206", "300", "180", "250"],
+    "correct": 0
+  },
+  {
+    "question": "¿Qué país tiene la mayor población del mundo en 2025?",
+    "answers": ["India", "China", "Estados Unidos", "Indonesia"],
+    "correct": 0
+  },
+  {
+    "question": "¿Cuál es la moneda oficial de Japón?",
+    "answers": ["Yuan", "Won", "Yen", "Ringgit"],
+    "correct": 2
+  },
+  {
+    "question": "¿Quién fue la primera mujer en ganar un Premio Nobel?",
+    "answers": ["Marie Curie", "Rosalind Franklin", "Jane Goodall", "Dorothy Hodgkin"],
+    "correct": 0
+  },
+  {
+    "question": "¿En qué continente se encuentra Egipto?",
+    "answers": ["Asia", "África", "Europa", "Oriente Medio"],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es el lenguaje de programación más usado en 2025?",
+    "answers": ["Python", "JavaScript", "Java", "C++"],
+    "correct": 0
+  },
+  {
+    "question": "¿Qué planeta es conocido como el 'planeta rojo'?",
+    "answers": ["Venus", "Marte", "Júpiter", "Saturno"],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es la montaña más alta del mundo?",
+    "answers": ["K2", "Kangchenjunga", "Monte Everest", "Makalu"],
+    "correct": 2
+  },
+  {
+    "question": "¿Qué órgano produce la insulina?",
+    "answers": ["Hígado", "Páncreas", "Estómago", "Riñones"],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es el país más grande del mundo en extensión territorial?",
+    "answers": ["China", "Estados Unidos", "Canadá", "Rusia"],
+    "correct": 3
+  },
+  {
+    "question": "¿Qué famoso científico desarrolló la teoría de la relatividad?",
+    "answers": ["Isaac Newton", "Nikola Tesla", "Albert Einstein", "Stephen Hawking"],
+    "correct": 2
+  },
+  {
+    "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
+    "answers": ["1935", "1939", "1941", "1945"],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es el país del tango?",
+    "answers": ["España", "México", "Argentina", "Colombia"],
+    "correct": 2
+  },
+  {
+    "question": "¿Qué tipo de animal es un delfín?",
+    "answers": ["Reptil", "Mamífero", "Pez", "Anfibio"],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es el río que atraviesa París?",
+    "answers": ["Loira", "Sena", "Ródano", "Mosela"],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué elemento químico tiene el símbolo 'O'?",
+    "answers": ["Oro", "Osmio", "Oxígeno", "Oganesón"],
+    "correct": 2
+  },
+  {
+    "question": "¿Quién fue el primer presidente de Estados Unidos?",
+    "answers": ["Thomas Jefferson", "John Adams", "Abraham Lincoln", "George Washington"],
+    "correct": 3
+  },
+  {
+    "question": "¿Cuál es la capital de Australia?",
+    "answers": ["Sídney", "Melbourne", "Canberra", "Brisbane"],
+    "correct": 2
+  },
+  {
+    "question": "¿Qué instrumento se usa para medir la presión atmosférica?",
+    "answers": ["Termómetro", "Barómetro", "Anemómetro", "Higrómetro"],
+    "correct": 1
+  },
+  {
+    "question": "¿En qué país nació el café?",
+    "answers": ["Brasil", "Etiopía", "Colombia", "Arabia Saudita"],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es el músculo más fuerte del cuerpo humano?",
+    "answers": ["Corazón", "Lengua", "Músculo masetero", "Glúteo mayor"],
+    "correct": 2
+  },
+  {
+    "question": "¿Qué famosa banda británica lanzó el álbum 'Abbey Road'?",
+    "answers": ["The Rolling Stones", "The Who", "The Beatles", "Led Zeppelin"],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuántos continentes hay en la Tierra?",
+    "answers": ["5", "6", "7", "8"],
+    "correct": 2
+  },
+  {
+    "question": "¿Qué país inventó el sushi?",
+    "answers": ["China", "Tailandia", "Corea", "Japón"],
+    "correct": 3
+  },
+  {
+    "question": "¿Cuál es la capital de Canadá?",
+    "answers": ["Toronto", "Vancouver", "Montreal", "Ottawa"],
+    "correct": 3
+  },
+  {
+    "question": "¿Qué vitamina se produce cuando la piel se expone al sol?",
+    "answers": ["Vitamina A", "Vitamina C", "Vitamina D", "Vitamina E"],
+    "correct": 2
+  },
+  {
+    "question": "¿Qué escritor creó a Sherlock Holmes?",
+    "answers": ["Agatha Christie", "Arthur Conan Doyle", "Edgar Allan Poe", "H.G. Wells"],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es el océano más pequeño del mundo?",
+    "answers": ["Ártico", "Antártico", "Índico", "Atlántico"],
+    "correct": 0
+  },
+  {
+    "question": "¿Qué animal es el símbolo nacional de Estados Unidos?",
+    "answers": ["Lechuza", "Águila calva", "Oso pardo", "Lobo"],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es el nombre del satélite natural de la Tierra?",
+    "answers": ["Fobos", "Luna", "Europa", "Titán"],
+    "correct": 1
+  },
+  {
+    "question": "¿En qué año llegó el hombre a la Luna?",
+    "answers": ["1967", "1969", "1971", "1973"],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué país tiene forma de bota?",
+    "answers": ["Grecia", "Turquía", "Italia", "Croacia"],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuál es el idioma más hablado del mundo por número de hablantes nativos?",
+    "answers": ["Inglés", "Español", "Mandarín", "Hindi"],
+    "correct": 2
+  },
+  {
+    "question": "¿Qué fruta tiene las semillas por fuera?",
+    "answers": ["Fresa", "Kiwi", "Manzana", "Papaya"],
+    "correct": 0
+  },
+  {
+    "question": "¿Quién pintó 'La noche estrellada'?",
+    "answers": ["Pablo Picasso", "Claude Monet", "Vincent van Gogh", "Salvador Dalí"],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuál es el metal más abundante en la corteza terrestre?",
+    "answers": ["Hierro", "Aluminio", "Cobre", "Oro"],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué continente es conocido como el 'continente blanco'?",
+    "answers": ["Groenlandia", "Islandia", "Antártida", "Canadá"],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuántos años tiene una década?",
+    "answers": ["5", "10", "15", "20"],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué animal puede dormir de pie?",
+    "answers": ["León", "Caballo", "Mono", "Oso"],
+    "correct": 1
+  },
+    {
+    "question": "¿Qué país es famoso por sus tulipanes y molinos de viento?",
+    "answers": ["Bélgica", "Dinamarca", "Países Bajos", "Suiza"],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuál es el único mamífero capaz de volar?",
+    "answers": ["Ardilla voladora", "Pájaro carpintero", "Murciélago", "Colibrí"],
+    "correct": 2
+  },
+  {
+    "question": "¿En qué país se encuentra la ciudad de Petra?",
+    "answers": ["Egipto", "Israel", "Jordania", "Siria"],
+    "correct": 2
+  },
+  {
+    "question": "¿Qué famoso matemático es considerado el padre de la geometría?",
+    "answers": ["Pitágoras", "Euclides", "Arquímedes", "Newton"],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es el nombre del sistema que usan los murciélagos para orientarse?",
+    "answers": ["Ecolocalización", "Sonar", "Radar", "Termografía"],
+    "correct": 0
+  },
+  {
+    "question": "¿Qué ciudad es conocida como 'La Ciudad Eterna'?",
+    "answers": ["Atenas", "París", "Roma", "El Cairo"],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuál es el país más pequeño del mundo?",
+    "answers": ["Mónaco", "Malta", "Vaticano", "San Marino"],
+    "correct": 2
+  },
+  {
+    "question": "¿Qué instrumento musical tiene cuerdas y se toca con un arco?",
+    "answers": ["Guitarra", "Violín", "Ukulele", "Arpa"],
+    "correct": 1
+  },
+  {
+    "question": "¿En qué año se fundó Google?",
+    "answers": ["1995", "1998", "2001", "2005"],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es el océano que rodea a la Antártida?",
+    "answers": ["Pacífico", "Índico", "Atlántico", "Océano Antártico"],
+    "correct": 3
+  },
+  {
+    "question": "¿Qué civilización construyó las pirámides de Giza?",
+    "answers": ["Maya", "Inca", "Egipcia", "Azteca"],
+    "correct": 2
+  },
+  {
+    "question": "¿Qué tipo de ángulo mide exactamente 90 grados?",
+    "answers": ["Agudo", "Obtuso", "Recto", "Llano"],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuál es la capital de Nueva Zelanda?",
+    "answers": ["Auckland", "Christchurch", "Wellington", "Dunedin"],
+    "correct": 2
+  },
+  {
+    "question": "¿Quién fue la primera persona en orbitar la Tierra?",
+    "answers": ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "Alan Shepard"],
+    "correct": 2
+  },
+  {
+    "question": "¿Qué metal líquido se usa en termómetros tradicionales?",
+    "answers": ["Plata", "Plomo", "Mercurio", "Galio"],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuál es el nombre del proceso por el que las plantas hacen su alimento?",
+    "answers": ["Respiración", "Fotosíntesis", "Transpiración", "Germinación"],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué famoso personaje de Disney pierde su zapatilla de cristal?",
+    "answers": ["Blancanieves", "Ariel", "Cenicienta", "Bella"],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuántos días tiene un año bisiesto?",
+    "answers": ["364", "365", "366", "367"],
+    "correct": 2
+  },
+  {
+    "question": "¿En qué país nació Simón Bolívar?",
+    "answers": ["Colombia", "Venezuela", "Ecuador", "Perú"],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué planeta tiene un sistema de anillos muy visible?",
+    "answers": ["Júpiter", "Urano", "Neptuno", "Saturno"],
+    "correct": 3
+  },
+  {
+    "question": "¿Cuál es el órgano más grande del cuerpo humano?",
+    "answers": ["Hígado", "Piel", "Corazón", "Intestino"],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué colores tiene la bandera de México?",
+    "answers": ["Rojo, blanco y azul", "Verde, blanco y rojo", "Amarillo, azul y rojo", "Verde, amarillo y rojo"],
+    "correct": 1
+  },
+  {
+    "question": "¿Quién escribió 'Cien años de soledad'?",
+    "answers": ["Mario Vargas Llosa", "Julio Cortázar", "Gabriel García Márquez", "Pablo Neruda"],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuál es el sonido más alto producido por un animal?",
+    "answers": ["León", "Elefante", "Ballena azul", "Gorila"],
+    "correct": 2
+  },
+  {
+    "question": "¿Qué país tiene la mayor cantidad de islas en el mundo?",
+    "answers": ["Grecia", "Filipinas", "Suecia", "Indonesia"],
+    "correct": 3
+  },
+  {
+    "question": "¿En qué continente se originó el café?",
+    "answers": ["Asia", "África", "América", "Oceanía"],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es el lenguaje de señas más usado en Estados Unidos?",
+    "answers": ["ASL", "LSF", "BSL", "ISL"],
+    "correct": 0
+  },
+  {
+    "question": "¿Qué significa la sigla 'ADN'?",
+    "answers": ["Ácido Desoxirribonucleico", "Ácido Dextrorribonucleico", "Adenina Desoxinucleótido", "Ácido Dinucleico"],
+    "correct": 0
+  },
+  {
+    "question": "¿Cuál es el deporte más popular del mundo?",
+    "answers": ["Baloncesto", "Fútbol americano", "Fútbol", "Tenis"],
+    "correct": 2
+  },
+  {
+    "question": "¿Qué país inventó el karate?",
+    "answers": ["China", "Tailandia", "Japón", "Corea"],
+    "correct": 2
+  }
+]
+
+
