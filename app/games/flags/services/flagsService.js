@@ -465,7 +465,184 @@ export const countries = [
     capital: "Wellington",
     difficulty: "medium",
   },
-];
+  {
+    name: "Fiji",
+    code: "FJ",
+    continent: "Oceanía",
+    capital: "Suva",
+    difficulty: "hard",
+  },
+  {
+    name: "Samoa",
+    code: "WS",
+    continent: "Oceanía",
+    capital: "Apia",
+    difficulty: "hard",
+  },
+
+  // Países adicionales difíciles
+  {
+    name: "Líbano",
+    code: "LB",
+    continent: "Asia",
+    capital: "Beirut",
+    difficulty: "hard",
+  },
+  {
+    name: "Camboya",
+    code: "KH",
+    continent: "Asia",
+    capital: "Phnom Penh",
+    difficulty: "hard",
+  },
+  {
+    name: "Laos",
+    code: "LA",
+    continent: "Asia",
+    capital: "Vientián",
+    difficulty: "hard",
+  },
+  {
+    name: "Myanmar",
+    code: "MM",
+    continent: "Asia",
+    capital: "Naipyidó",
+    difficulty: "hard",
+  },
+  {
+    name: "Luxemburgo",
+    code: "LU",
+    continent: "Europa",
+    capital: "Luxemburgo",
+    difficulty: "hard",
+  },
+  {
+    name: "Malta",
+    code: "MT",
+    continent: "Europa",
+    capital: "La Valeta",
+    difficulty: "hard",
+  },
+  {
+    name: "Chipre",
+    code: "CY",
+    continent: "Europa",
+    capital: "Nicosia",
+    difficulty: "hard",
+  },
+  {
+    name: "Montenegro",
+    code: "ME",
+    continent: "Europa",
+    capital: "Podgorica",
+    difficulty: "hard",
+  },
+  {
+    name: "Bosnia y Herzegovina",
+    code: "BA",
+    continent: "Europa",
+    capital: "Sarajevo",
+    difficulty: "hard",
+  },
+  {
+    name: "Moldavia",
+    code: "MD",
+    continent: "Europa",
+    capital: "Chisináu",
+    difficulty: "hard",
+  },
+  {
+    name: "Mauricio",
+    code: "MU",
+    continent: "África",
+    capital: "Port Louis",
+    difficulty: "hard",
+  },
+  {
+    name: "Ruanda",
+    code: "RW",
+    continent: "África",
+    capital: "Kigali",
+    difficulty: "hard",
+  },
+  {
+    name: "Costa de Marfil",
+    code: "CI",
+    continent: "África",
+    capital: "Yamoussoukro",
+    difficulty: "hard",
+  },
+  {
+    name: "Camerún",
+    code: "CM",
+    continent: "África",
+    capital: "Yaundé",
+    difficulty: "hard",
+  },
+  {
+    name: "Gabón",
+    code: "GA",
+    continent: "África",
+    capital: "Libreville",
+    difficulty: "hard",
+  },
+  {
+    name: "Namibia",
+    code: "NA",
+    continent: "África",
+    capital: "Windhoek",
+    difficulty: "hard",
+  },
+  {
+    name: "Botsuana",
+    code: "BW",
+    continent: "África",
+    capital: "Gaborone",
+    difficulty: "hard",
+  },
+  {
+    name: "Zambia",
+    code: "ZM",
+    continent: "África",
+    capital: "Lusaka",
+    difficulty: "hard",
+  },
+  {
+    name: "Zimbabue",
+    code: "ZW",
+    continent: "África",
+    capital: "Harare",
+    difficulty: "hard",
+  },
+  {
+    name: "Kirguistán",
+    code: "KG",
+    continent: "Asia",
+    capital: "Biskek",
+    difficulty: "hard",
+  },
+  {
+    name: "Tayikistán",
+    code: "TJ",
+    continent: "Asia",
+    capital: "Dusambé",
+    difficulty: "hard",
+  },
+  {
+    name: "Uzbekistán",
+    code: "UZ",
+    continent: "Asia",
+    capital: "Taskent",
+    difficulty: "hard",
+  },
+  {
+    name: "Turkmenistán",
+    code: "TM",
+    continent: "Asia",
+    capital: "Asjabad",
+    difficulty: "hard",
+  },
+  ];
 
 export function getCountriesByDifficulty(difficulty) {
   if (difficulty === "all") return countries;
@@ -474,7 +651,14 @@ export function getCountriesByDifficulty(difficulty) {
 
 export function getRandomCountries(count, difficulty = "all") {
   const pool = getCountriesByDifficulty(difficulty);
-  const shuffled = [...pool].sort(() => Math.random() - 0.5);
+  const shuffled = [...pool];
+  
+  // Fisher-Yates shuffle algorithm
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  
   return shuffled.slice(0, count);
 }
 
@@ -491,7 +675,13 @@ export function generateOptions(correctCountry, allCountries, count = 4) {
     otherCountries.splice(randomIndex, 1);
   }
 
-  return options.sort(() => Math.random() - 0.5);
+  // Fisher-Yates shuffle algorithm
+  for (let i = options.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [options[i], options[j]] = [options[j], options[i]];
+  }
+
+  return options;
 }
 
 export function getFlagUrl(countryCode) {

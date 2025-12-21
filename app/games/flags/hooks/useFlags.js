@@ -3,8 +3,8 @@ import { useState, useEffect, useCallback } from 'react';
 import { getRandomCountries, generateOptions, getCountriesByDifficulty } from '../services/flagsService';
 
 const GAME_MODES = {
-  normal: { questions: 10, timeLimit: null },
-  timed: { questions: 20, timeLimit: 60 },
+  normal: { questions: 20, timeLimit: null },
+  timed: { questions: 30, timeLimit: 60 },
 };
 
 export function useFlags() {
@@ -71,7 +71,8 @@ export function useFlags() {
 
   const loadNextQuestion = useCallback((queue, qNumber) => {
     if (qNumber >= queue.length) {
-      endGame();
+      setIsPlaying(false);
+      setGameOver(true);
       return;
     }
 
